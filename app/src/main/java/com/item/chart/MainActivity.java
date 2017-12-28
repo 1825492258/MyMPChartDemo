@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.item.chart.activity.EightActivity;
 import com.item.chart.activity.FiveActivity;
 import com.item.chart.activity.FourActivity;
 import com.item.chart.activity.OneActivity;
@@ -13,6 +14,10 @@ import com.item.chart.activity.SixActivity;
 import com.item.chart.activity.ThreeActivity;
 import com.item.chart.activity.TwoActivity;
 
+/**
+ * MPAndroidChart
+ * https://github.com/PhilJay/MPAndroidChart
+ */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
@@ -26,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_five).setOnClickListener(this);
         findViewById(R.id.btn_six).setOnClickListener(this);
         findViewById(R.id.btn_seven).setOnClickListener(this);
+        findViewById(R.id.btn_eight).setOnClickListener(this);
     }
 
     @Override
@@ -49,8 +55,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_six: // ListView
                 startActivity(new Intent(this, SixActivity.class));
                 break;
-            case R.id.btn_seven:
+            case R.id.btn_seven: // 混合图
                 startActivity(new Intent(this, SevenActivity.class));
+                break;
+            case R.id.btn_eight: // 外面有个ScrollView
+                startActivity(new Intent(this, EightActivity.class));
                 break;
         }
     }

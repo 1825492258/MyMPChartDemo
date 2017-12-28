@@ -57,4 +57,10 @@
         android:text="混合图"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_eight"
+        android:layout_width="match_parent"
+        android:text="滑动图"
+        android:layout_height="wrap_content" />
 </LinearLayout>
