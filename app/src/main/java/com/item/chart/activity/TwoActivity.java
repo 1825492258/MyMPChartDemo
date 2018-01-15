@@ -1,6 +1,7 @@
 package com.item.chart.activity;
 
 import android.annotation.SuppressLint;
+import android.graphics.Matrix;
 import android.graphics.RectF;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -79,7 +80,7 @@ public class TwoActivity extends AppCompatActivity implements OnChartValueSelect
         XYMarkerView mv = new XYMarkerView(this,xAxis.getValueFormatter());
         mv.setChartView(mBarChart); // For bounds control
         mBarChart.setMarker(mv); // Set the marker to the chart
-        setData(5);
+        setData(14);
     }
 
     private void setData(int count) {
@@ -114,6 +115,13 @@ public class TwoActivity extends AppCompatActivity implements OnChartValueSelect
             mBarChart.setData(data);
         }
         mBarChart.invalidate();
+
+        // 如何将MPAndroidChart设置为左右滑动的样式
+        // http://blog.csdn.net/Dao_Li/article/details/52608319?locationNum=11&fps=1
+        Matrix matrix = new Matrix();
+        matrix.postScale(1.5f,1f);
+        mBarChart.getViewPortHandler().refresh(matrix,mBarChart,false);
+        mBarChart.animateY(800);
     }
 
     protected RectF mOnValueSelectedRectF = new RectF();
