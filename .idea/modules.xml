@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyMPChartDemo.iml" filepath="$PROJECT_DIR$/MyMPChartDemo.iml" />
+      <module fileurl="file://E:\WZJDemo\MyMPChartDemo\MyMPChartDemo.iml" filepath="E:\WZJDemo\MyMPChartDemo\MyMPChartDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://E:\WZJDemo\MyMPChartDemo\app\app.iml" filepath="E:\WZJDemo\MyMPChartDemo\app\app.iml" />
     </modules>
   </component>
 </project>

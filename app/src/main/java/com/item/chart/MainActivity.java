@@ -11,6 +11,7 @@ import com.item.chart.activity.FourActivity;
 import com.item.chart.activity.OneActivity;
 import com.item.chart.activity.SevenActivity;
 import com.item.chart.activity.SixActivity;
+import com.item.chart.activity.TestActivity;
 import com.item.chart.activity.ThreeActivity;
 import com.item.chart.activity.TwoActivity;
 
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_six).setOnClickListener(this);
         findViewById(R.id.btn_seven).setOnClickListener(this);
         findViewById(R.id.btn_eight).setOnClickListener(this);
+        findViewById(R.id.btn_text).setOnClickListener(this);
     }
 
     @Override
@@ -60,6 +62,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_eight: // 外面有个ScrollView
                 startActivity(new Intent(this, EightActivity.class));
+                break;
+            case R.id.btn_text:
+                startActivity(new Intent(this, TestActivity.class));
                 break;
         }
     }

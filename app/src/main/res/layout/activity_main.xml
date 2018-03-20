@@ -63,4 +63,10 @@
         android:layout_width="match_parent"
         android:text="滑动图"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/btn_text"
+        android:text="test"
+        android:layout_height="wrap_content" />
 </LinearLayout>
